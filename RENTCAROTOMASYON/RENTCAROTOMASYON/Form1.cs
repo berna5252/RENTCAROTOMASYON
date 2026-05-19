@@ -161,6 +161,12 @@ namespace RENTCAROTOMASYON
             form_cc.ShowDialog();
             this.Close();
         }
+
+        private void btn_form_car_Click(object sender, EventArgs e)
+        {
+            Form_Car formCar = new Form_Car();
+            formCar.Show();
+        }
     }
 }
 

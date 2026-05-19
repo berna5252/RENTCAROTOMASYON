@@ -64,7 +64,7 @@
             // 
             this.btn_listele.Location = new System.Drawing.Point(588, 299);
             this.btn_listele.Name = "btn_listele";
-            this.btn_listele.Size = new System.Drawing.Size(75, 23);
+            this.btn_listele.Size = new System.Drawing.Size(112, 23);
             this.btn_listele.TabIndex = 1;
             this.btn_listele.Text = "LİSTELE";
             this.btn_listele.UseVisualStyleBackColor = true;
@@ -74,7 +74,7 @@
             // 
             this.btn_ekle.Location = new System.Drawing.Point(588, 390);
             this.btn_ekle.Name = "btn_ekle";
-            this.btn_ekle.Size = new System.Drawing.Size(75, 23);
+            this.btn_ekle.Size = new System.Drawing.Size(112, 23);
             this.btn_ekle.TabIndex = 2;
             this.btn_ekle.Text = "EKLE";
             this.btn_ekle.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             this.btn_sil.Location = new System.Drawing.Point(588, 475);
             this.btn_sil.Name = "btn_sil";
-            this.btn_sil.Size = new System.Drawing.Size(75, 23);
+            this.btn_sil.Size = new System.Drawing.Size(112, 23);
             this.btn_sil.TabIndex = 3;
             this.btn_sil.Text = "SİL";
             this.btn_sil.UseVisualStyleBackColor = true;
@@ -171,9 +171,9 @@
             this.groupBox1.Controls.Add(this.lbl_2);
             this.groupBox1.Controls.Add(this.rd_2);
             this.groupBox1.Controls.Add(this.rd_1);
-            this.groupBox1.Location = new System.Drawing.Point(864, 267);
+            this.groupBox1.Location = new System.Drawing.Point(794, 235);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(464, 315);
+            this.groupBox1.Size = new System.Drawing.Size(661, 315);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RAPORLAR";
