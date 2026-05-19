@@ -200,6 +200,7 @@
             this.rd_2.TabStop = true;
             this.rd_2.Text = "radioButton2";
             this.rd_2.UseVisualStyleBackColor = true;
+            this.rd_2.CheckedChanged += new System.EventHandler(this.rd_2_CheckedChanged);
             // 
             // lbl_1
             // 

@@ -244,8 +244,47 @@ namespace RENTCAROTOMASYON
                 MessageBox.Show("Hata = " + ex.Message);
             }
         }
+
+        private void rd_2_CheckedChanged(object sender, EventArgs e)
+        {
+        
+            try
+            {
+                if (rd_2.Checked)
+                {
+                    var result = db.CustomerCars
+                        .GroupBy(cc => new
+                        {
+                            cc.Customer.customer_ıd,
+                            cc.Customer.customer_name,
+                            cc.Customer.customer_surname
+                        })
+                        .Select(g => new
+                        {
+                            FullName = g.Key.customer_name + " " + g.Key.customer_surname,
+                            TotalPrice = g.Sum(cc => cc.total_price)
+                        })
+                        .OrderByDescending(x => x.TotalPrice)
+                        .FirstOrDefault();
+
+                    if (result != null)
+                    {
+                        lbl_2.Text = $"{result.FullName} toplam {result.TotalPrice} TL ödeme yaptı";
+                    }
+                    else
+                    {
+                        lbl_2.Text = "Kayıt bulunamadı.";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata = " + ex.Message);
+            }
+        }
     }
     }
+    
     
     
     
