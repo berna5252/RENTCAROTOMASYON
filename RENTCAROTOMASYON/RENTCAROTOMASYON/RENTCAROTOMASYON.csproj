@@ -73,6 +73,12 @@
     <Compile Include="Form_CustomerCar.Designer.cs">
       <DependentUpon>Form_CustomerCar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_CustomerCar.resx">
       <DependentUpon>Form_CustomerCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
