@@ -154,6 +154,13 @@ namespace RENTCAROTOMASYON
             { MessageBox.Show($"Hata = {ex.Message}"); }
         }
 
+        private void btn_form_cc_Click(object sender, EventArgs e)
+        {
+            Form_CustomerCar form_cc = new Form_CustomerCar();
+            this.Hide();
+            form_cc.ShowDialog();
+            this.Close();
+        }
     }
 }
 

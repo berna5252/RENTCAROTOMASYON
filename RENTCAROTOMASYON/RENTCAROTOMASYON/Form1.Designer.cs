@@ -42,24 +42,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_form_cc = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(3, -1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1325, 119);
+            this.dataGridView1.Size = new System.Drawing.Size(1443, 164);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btn_listele
             // 
-            this.btn_listele.Location = new System.Drawing.Point(1093, 180);
+            this.btn_listele.Location = new System.Drawing.Point(678, 204);
             this.btn_listele.Name = "btn_listele";
             this.btn_listele.Size = new System.Drawing.Size(75, 23);
             this.btn_listele.TabIndex = 1;
@@ -69,7 +72,7 @@
             // 
             // btn_sil
             // 
-            this.btn_sil.Location = new System.Drawing.Point(1093, 235);
+            this.btn_sil.Location = new System.Drawing.Point(678, 269);
             this.btn_sil.Name = "btn_sil";
             this.btn_sil.Size = new System.Drawing.Size(75, 23);
             this.btn_sil.TabIndex = 2;
@@ -79,7 +82,7 @@
             // 
             // btn_ekle
             // 
-            this.btn_ekle.Location = new System.Drawing.Point(1093, 300);
+            this.btn_ekle.Location = new System.Drawing.Point(678, 315);
             this.btn_ekle.Name = "btn_ekle";
             this.btn_ekle.Size = new System.Drawing.Size(75, 23);
             this.btn_ekle.TabIndex = 3;
@@ -89,7 +92,7 @@
             // 
             // btn_guncelle
             // 
-            this.btn_guncelle.Location = new System.Drawing.Point(1093, 363);
+            this.btn_guncelle.Location = new System.Drawing.Point(678, 369);
             this.btn_guncelle.Name = "btn_guncelle";
             this.btn_guncelle.Size = new System.Drawing.Size(75, 23);
             this.btn_guncelle.TabIndex = 4;
@@ -178,11 +181,32 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "AD:";
             // 
+            // btn_form_cc
+            // 
+            this.btn_form_cc.Location = new System.Drawing.Point(65, 64);
+            this.btn_form_cc.Name = "btn_form_cc";
+            this.btn_form_cc.Size = new System.Drawing.Size(168, 23);
+            this.btn_form_cc.TabIndex = 6;
+            this.btn_form_cc.Text = "KİRALAMA İŞLEMLERİ";
+            this.btn_form_cc.UseVisualStyleBackColor = true;
+            this.btn_form_cc.Click += new System.EventHandler(this.btn_form_cc_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btn_form_cc);
+            this.groupBox2.Location = new System.Drawing.Point(953, 219);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(353, 280);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "FORMLARA GEÇİŞ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1488, 450);
+            this.ClientSize = new System.Drawing.Size(1488, 673);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_guncelle);
             this.Controls.Add(this.btn_ekle);
@@ -194,6 +218,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -214,6 +239,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_form_cc;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 

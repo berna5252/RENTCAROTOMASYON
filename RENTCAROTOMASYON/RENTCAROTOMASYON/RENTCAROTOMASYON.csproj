@@ -56,7 +56,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="Category.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="CustomerCar.cs" />
     <Compile Include="CustomerDbContext.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -64,10 +67,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_CustomerCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CustomerCar.Designer.cs">
+      <DependentUpon>Form_CustomerCar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_CustomerCar.resx">
+      <DependentUpon>Form_CustomerCar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

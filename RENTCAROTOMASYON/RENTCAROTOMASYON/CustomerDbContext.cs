@@ -16,6 +16,11 @@ namespace RENTCAROTOMASYON
 
         }
         public DbSet<Customer> Customers { get; set; }
+      
+        public DbSet<Car> Cars { get; set; }
 
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<CustomerCar> CustomerCars { get; set; }
     }
 }

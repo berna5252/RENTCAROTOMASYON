@@ -9,23 +9,25 @@ using System.Threading.Tasks;
 namespace RENTCAROTOMASYON
 {
     [Table("Table_customercar")]
-    internal class CustomerCar
+    public class CustomerCar
     {
         [Key]
-        public int rental_id { get; set; }
+        public int rental_ıd { get; set; }
 
         [ForeignKey("Customer")]
-        public int customer_id { get; set; }
+        public int customer_ıd { get; set; }
 
         [ForeignKey("Car")]
-        public int car_id { get; set; }
+        public int car_ıd { get; set; }
 
         [Required]
         public DateTime rent_date { get; set; }
 
         [Required]
-        public decimal total_price { get; set; }
+        public DateTime return_date { get; set; }
 
+        [Required]
+        public decimal total_price { get; set; }
         public virtual Customer Customer { get; set; }
 
         public virtual Car Car { get; set; }

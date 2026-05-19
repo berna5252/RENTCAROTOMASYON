@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace RENTCAROTOMASYON
 {
     [Table("Table_customer")]
-    internal class Customer
+    public class Customer
     {
         [Key]
         public int customer_ıd { get; set; }
@@ -31,7 +31,7 @@ namespace RENTCAROTOMASYON
         [MaxLength(50)]
         public string customer_telephone { get; set; }
 
-        public virtual ICollection<CustomerProduct> CustomerProducts { get; set; }
+        public virtual ICollection<CustomerCar> CustomerCars { get; set; }
 
     }
 }
