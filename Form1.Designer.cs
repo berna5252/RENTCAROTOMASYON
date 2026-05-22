@@ -47,6 +47,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_form_car = new System.Windows.Forms.Button();
             this.btn_çıkış = new System.Windows.Forms.Button();
+            this.btn_rapor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -225,6 +226,7 @@
             // 
             this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox2.Controls.Add(this.btn_rapor);
             this.groupBox2.Controls.Add(this.btn_form_car);
             this.groupBox2.Controls.Add(this.btn_form_cc);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -258,6 +260,17 @@
             this.btn_çıkış.Text = "SİSTEMDEN ÇIKIŞ";
             this.btn_çıkış.UseVisualStyleBackColor = true;
             this.btn_çıkış.Click += new System.EventHandler(this.btn_çıkış_Click);
+            // 
+            // btn_rapor
+            // 
+            this.btn_rapor.ForeColor = System.Drawing.Color.Black;
+            this.btn_rapor.Location = new System.Drawing.Point(6, 220);
+            this.btn_rapor.Name = "btn_rapor";
+            this.btn_rapor.Size = new System.Drawing.Size(255, 33);
+            this.btn_rapor.TabIndex = 10;
+            this.btn_rapor.Text = "RAPORLAR";
+            this.btn_rapor.UseVisualStyleBackColor = true;
+            this.btn_rapor.Click += new System.EventHandler(this.btn_rapor_Click);
             // 
             // Form1
             // 
@@ -305,6 +318,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_form_car;
         private System.Windows.Forms.Button btn_çıkış;
+        private System.Windows.Forms.Button btn_rapor;
     }
 }
 

@@ -197,6 +197,12 @@ namespace RENTCAROTOMASYON
                 Application.Exit();
             }
         }
+
+        private void btn_rapor_Click(object sender, EventArgs e)
+        {
+            RAPORLAR RAPORLAR = new RAPORLAR();
+            RAPORLAR.Show();
+        }
     }
 }
 
