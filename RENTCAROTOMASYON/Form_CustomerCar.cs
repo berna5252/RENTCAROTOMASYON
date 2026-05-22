@@ -100,7 +100,7 @@ namespace RENTCAROTOMASYON
 
         private void btn_ekle_Click(object sender, EventArgs e)
         {
-        
+     
             try
             {
                 if (cmb_customer.SelectedValue == null || cmb_car.SelectedValue == null)
@@ -120,6 +120,18 @@ namespace RENTCAROTOMASYON
                 if (gunSayisi <= 0)
                 {
                     MessageBox.Show("Teslim tarihi alış tarihinden sonra olmalıdır.");
+                    return;
+                }
+
+                bool aracDoluMu = db.CustomerCars.Any(cc =>
+                    cc.car_ıd == selectedCarId &&
+                    rentDate < cc.return_date &&
+                    returnDate > cc.rent_date
+                );
+
+                if (aracDoluMu)
+                {
+                    MessageBox.Show("Seçilen araç bu tarih aralığında zaten kiralanmış.");
                     return;
                 }
 
@@ -158,6 +170,7 @@ namespace RENTCAROTOMASYON
                 );
             }
         }
+        
 
         private void btn_sil_Click(object sender, EventArgs e)
         {
@@ -247,7 +260,7 @@ namespace RENTCAROTOMASYON
 
         private void rd_2_CheckedChanged(object sender, EventArgs e)
         {
-        
+
             try
             {
                 if (rd_2.Checked)
@@ -255,21 +268,21 @@ namespace RENTCAROTOMASYON
                     var result = db.CustomerCars
                         .GroupBy(cc => new
                         {
-                            cc.Customer.customer_ıd,
-                            cc.Customer.customer_name,
-                            cc.Customer.customer_surname
+                            cc.Car.car_ıd,
+                            cc.Car.car_name,
+                            cc.Car.car_plate
                         })
                         .Select(g => new
                         {
-                            FullName = g.Key.customer_name + " " + g.Key.customer_surname,
-                            TotalPrice = g.Sum(cc => cc.total_price)
+                            Arac = g.Key.car_name + " - " + g.Key.car_plate,
+                            KiralamaSayisi = g.Count()
                         })
-                        .OrderByDescending(x => x.TotalPrice)
+                        .OrderByDescending(x => x.KiralamaSayisi)
                         .FirstOrDefault();
 
                     if (result != null)
                     {
-                        lbl_2.Text = $"{result.FullName} toplam {result.TotalPrice} TL ödeme yaptı";
+                        lbl_2.Text = $"{result.Arac} {result.KiralamaSayisi} kez kiralandı";
                     }
                     else
                     {
@@ -283,6 +296,13 @@ namespace RENTCAROTOMASYON
             }
         }
 
+        private void btn_form_customer_Click(object sender, EventArgs e)
+        {
+            Form1 anaForm = new Form1();
+            this.Hide();
+            anaForm.ShowDialog();
+            this.Close();
+        }
     }
     }
     

@@ -232,6 +232,14 @@ namespace RENTCAROTOMASYON
                 txt_daily_price.Text = dataGridView1.Rows[e.RowIndex].Cells["GunlukUcret"].Value.ToString();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 anaForm = new Form1();
+            this.Hide();
+            anaForm.ShowDialog();
+            this.Close();
+        }
     }
     }
     

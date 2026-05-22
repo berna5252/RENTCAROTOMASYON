@@ -132,6 +132,7 @@
             this.btn_form_customer.TabIndex = 8;
             this.btn_form_customer.Text = "ANA FORM";
             this.btn_form_customer.UseVisualStyleBackColor = true;
+            this.btn_form_customer.Click += new System.EventHandler(this.btn_form_customer_Click);
             // 
             // dtp_rent_date
             // 
@@ -201,10 +202,10 @@
             this.rd_2.AutoSize = true;
             this.rd_2.Location = new System.Drawing.Point(6, 155);
             this.rd_2.Name = "rd_2";
-            this.rd_2.Size = new System.Drawing.Size(277, 20);
+            this.rd_2.Size = new System.Drawing.Size(204, 20);
             this.rd_2.TabIndex = 1;
             this.rd_2.TabStop = true;
-            this.rd_2.Text = "EN YÜKSEK ÜCRET ÖDEYEN MÜŞTERİ";
+            this.rd_2.Text = "EN ÇOK KİRALANAN ARABA";
             this.rd_2.UseVisualStyleBackColor = true;
             this.rd_2.CheckedChanged += new System.EventHandler(this.rd_2_CheckedChanged);
             // 

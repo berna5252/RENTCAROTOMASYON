@@ -41,6 +41,7 @@
             this.btn_sil = new System.Windows.Forms.Button();
             this.btn_ekle = new System.Windows.Forms.Button();
             this.btn_guncelle = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -168,11 +169,22 @@
             this.btn_guncelle.UseVisualStyleBackColor = true;
             this.btn_guncelle.Click += new System.EventHandler(this.btn_guncelle_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(165, 683);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 43);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "ANA FORM";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form_Car
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1613, 838);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_guncelle);
             this.Controls.Add(this.btn_ekle);
             this.Controls.Add(this.btn_sil);
@@ -210,5 +222,6 @@
         private System.Windows.Forms.Button btn_sil;
         private System.Windows.Forms.Button btn_ekle;
         private System.Windows.Forms.Button btn_guncelle;
+        private System.Windows.Forms.Button button1;
     }
 }
