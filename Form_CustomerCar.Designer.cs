@@ -275,7 +275,7 @@
             this.Controls.Add(this.btn_ekle);
             this.Controls.Add(this.btn_listele);
             this.Name = "Form_CustomerCar";
-            this.Text = "Form_CustomerCar";
+            this.Text = "KİRALAMA İŞLEMLERİ";
             this.Load += new System.EventHandler(this.Form_CustomerCar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
