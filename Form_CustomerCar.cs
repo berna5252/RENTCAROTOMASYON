@@ -26,6 +26,7 @@ namespace RENTCAROTOMASYON
         {
             try
             {
+                DateTime bugun = DateTime.Today;
                 var list = db.CustomerCars
      .Include(cc => cc.Customer)
      .Include(cc => cc.Car)
@@ -40,7 +41,8 @@ namespace RENTCAROTOMASYON
          GÜNLÜKÜCRET = cc.Car.car_dailyprice,
          ALIŞTARİHİ = cc.rent_date,
          TESLİMTARİHİ = cc.return_date,
-         TOPLAMÜCRET= cc.total_price
+         TOPLAMÜCRET= cc.total_price,
+         DURUM = cc.return_date <= bugun ? "TESLİM EDİLDİ" : "KİRADA"
      })
      .ToList();
 
@@ -303,8 +305,47 @@ namespace RENTCAROTOMASYON
             anaForm.ShowDialog();
             this.Close();
         }
+
+        private void btn_teslimal_Click(object sender, EventArgs e)
+        {
+        
+            try
+            {
+                if (dataGridView1.CurrentRow == null)
+                {
+                    MessageBox.Show("Lütfen teslim alınacak kaydı seçiniz.");
+                    return;
+                }
+
+                int selectedId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["rental_ıd"].Value);
+
+                CustomerCar record = db.CustomerCars.Find(selectedId);
+
+                if (record != null)
+                {
+                    record.return_date = DateTime.Today;
+                    db.SaveChanges();
+
+                    MessageBox.Show("Araç teslim alındı.");
+                    btn_listele.PerformClick();
+                }
+                else
+                {
+                    MessageBox.Show("Kayıt bulunamadı.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Hata = " + ex.Message +
+                    "\n\nDetay = " + ex.InnerException?.Message +
+                    "\n\nEn İç Detay = " + ex.InnerException?.InnerException?.Message
+                );
+            }
+        }
     }
     }
+    
     
     
     
