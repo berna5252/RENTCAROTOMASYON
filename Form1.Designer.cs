@@ -46,6 +46,7 @@
             this.btn_form_cc = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_form_car = new System.Windows.Forms.Button();
+            this.btn_çıkış = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -247,6 +248,17 @@
             this.btn_form_car.UseVisualStyleBackColor = true;
             this.btn_form_car.Click += new System.EventHandler(this.btn_form_car_Click);
             // 
+            // btn_çıkış
+            // 
+            this.btn_çıkış.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_çıkış.Location = new System.Drawing.Point(1266, 670);
+            this.btn_çıkış.Name = "btn_çıkış";
+            this.btn_çıkış.Size = new System.Drawing.Size(235, 38);
+            this.btn_çıkış.TabIndex = 8;
+            this.btn_çıkış.Text = "SİSTEMDEN ÇIKIŞ";
+            this.btn_çıkış.UseVisualStyleBackColor = true;
+            this.btn_çıkış.Click += new System.EventHandler(this.btn_çıkış_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -254,6 +266,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1601, 760);
+            this.Controls.Add(this.btn_çıkış);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btn_guncelle);
@@ -291,6 +304,7 @@
         private System.Windows.Forms.Button btn_form_cc;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_form_car;
+        private System.Windows.Forms.Button btn_çıkış;
     }
 }
 

@@ -183,6 +183,20 @@ namespace RENTCAROTOMASYON
             Form_Car formCar = new Form_Car();
             formCar.Show();
         }
+
+        private void btn_çıkış_Click(object sender, EventArgs e)
+        {
+            DialogResult sonuc = MessageBox.Show(
+        "Sistemden çıkmak istediğinize emin misiniz?",
+        "Çıkış Onayı",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question);
+
+            if (sonuc == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
 
