@@ -46,7 +46,6 @@
             this.lbl_2 = new System.Windows.Forms.Label();
             this.rd_2 = new System.Windows.Forms.RadioButton();
             this.rd_1 = new System.Windows.Forms.RadioButton();
-            this.btn_teslimal = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -222,22 +221,11 @@
             this.rd_1.UseVisualStyleBackColor = true;
             this.rd_1.CheckedChanged += new System.EventHandler(this.rd_1_CheckedChanged);
             // 
-            // btn_teslimal
-            // 
-            this.btn_teslimal.Location = new System.Drawing.Point(588, 562);
-            this.btn_teslimal.Name = "btn_teslimal";
-            this.btn_teslimal.Size = new System.Drawing.Size(112, 23);
-            this.btn_teslimal.TabIndex = 14;
-            this.btn_teslimal.Text = "TESLİM AL ";
-            this.btn_teslimal.UseVisualStyleBackColor = true;
-            this.btn_teslimal.Click += new System.EventHandler(this.btn_teslimal_Click);
-            // 
             // Form_CustomerCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1605, 737);
-            this.Controls.Add(this.btn_teslimal);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -283,6 +271,5 @@
         private System.Windows.Forms.Label lbl_2;
         private System.Windows.Forms.RadioButton rd_2;
         private System.Windows.Forms.RadioButton rd_1;
-        private System.Windows.Forms.Button btn_teslimal;
     }
 }

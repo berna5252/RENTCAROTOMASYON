@@ -21,7 +21,7 @@ namespace RENTCAROTOMASYON
         }
         CustomerDbContext db = new CustomerDbContext();
 
-     
+
         private void btn_listele_Click(object sender, EventArgs e)
         {
             try
@@ -35,13 +35,13 @@ namespace RENTCAROTOMASYON
          cc.rental_ıd,
          MÜŞTERİADI = cc.Customer.customer_name,
          MÜŞTERİSOYADI = cc.Customer.customer_surname,
-         ARAÇADI= cc.Car.car_name,
+         ARAÇADI = cc.Car.car_name,
          KATEGORİ = cc.Car.Category.category_name,
-         PLAKA= cc.Car.car_plate,
+         PLAKA = cc.Car.car_plate,
          GÜNLÜKÜCRET = cc.Car.car_dailyprice,
          ALIŞTARİHİ = cc.rent_date,
          TESLİMTARİHİ = cc.return_date,
-         TOPLAMÜCRET= cc.total_price,
+         TOPLAMÜCRET = cc.total_price,
          DURUM = cc.return_date <= bugun ? "TESLİM EDİLDİ" : "KİRADA"
      })
      .ToList();
@@ -64,7 +64,7 @@ namespace RENTCAROTOMASYON
 
         private void Form_CustomerCar_Load(object sender, EventArgs e)
         {
-         
+
             try
             {
                 cmb_customer.DataSource = db.Customers
@@ -102,7 +102,7 @@ namespace RENTCAROTOMASYON
 
         private void btn_ekle_Click(object sender, EventArgs e)
         {
-     
+
             try
             {
                 if (cmb_customer.SelectedValue == null || cmb_car.SelectedValue == null)
@@ -172,11 +172,11 @@ namespace RENTCAROTOMASYON
                 );
             }
         }
-        
+
 
         private void btn_sil_Click(object sender, EventArgs e)
         {
-        
+
             try
             {
                 DialogResult sonuc = MessageBox.Show(
@@ -224,7 +224,7 @@ namespace RENTCAROTOMASYON
 
         private void rd_1_CheckedChanged(object sender, EventArgs e)
         {
-        
+
             try
             {
                 if (rd_1.Checked)
@@ -306,46 +306,8 @@ namespace RENTCAROTOMASYON
             this.Close();
         }
 
-        private void btn_teslimal_Click(object sender, EventArgs e)
-        {
-        
-            try
-            {
-                if (dataGridView1.CurrentRow == null)
-                {
-                    MessageBox.Show("Lütfen teslim alınacak kaydı seçiniz.");
-                    return;
-                }
-
-                int selectedId = Convert.ToInt32(dataGridView1.CurrentRow.Cells["rental_ıd"].Value);
-
-                CustomerCar record = db.CustomerCars.Find(selectedId);
-
-                if (record != null)
-                {
-                    record.return_date = DateTime.Today;
-                    db.SaveChanges();
-
-                    MessageBox.Show("Araç teslim alındı.");
-                    btn_listele.PerformClick();
-                }
-                else
-                {
-                    MessageBox.Show("Kayıt bulunamadı.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "Hata = " + ex.Message +
-                    "\n\nDetay = " + ex.InnerException?.Message +
-                    "\n\nEn İç Detay = " + ex.InnerException?.InnerException?.Message
-                );
-            }
-        }
     }
-    }
-    
+}
     
     
     
