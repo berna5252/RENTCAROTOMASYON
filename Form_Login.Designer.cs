@@ -39,27 +39,29 @@
             // 
             // txt_kullanici_adi
             // 
+            this.txt_kullanici_adi.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_kullanici_adi.Location = new System.Drawing.Point(727, 143);
             this.txt_kullanici_adi.Name = "txt_kullanici_adi";
-            this.txt_kullanici_adi.Size = new System.Drawing.Size(222, 22);
+            this.txt_kullanici_adi.Size = new System.Drawing.Size(222, 34);
             this.txt_kullanici_adi.TabIndex = 0;
             // 
             // txt_sifre
             // 
+            this.txt_sifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_sifre.Location = new System.Drawing.Point(727, 231);
             this.txt_sifre.Name = "txt_sifre";
             this.txt_sifre.PasswordChar = '*';
-            this.txt_sifre.Size = new System.Drawing.Size(222, 22);
+            this.txt_sifre.Size = new System.Drawing.Size(222, 34);
             this.txt_sifre.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.Location = new System.Drawing.Point(450, 141);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 22);
+            this.label1.Size = new System.Drawing.Size(178, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "KULLANICI ADI";
             // 
@@ -67,17 +69,17 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(450, 229);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 22);
+            this.label2.Size = new System.Drawing.Size(83, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "ŞİFRE";
             // 
             // btn_giris
             // 
             this.btn_giris.BackColor = System.Drawing.Color.White;
-            this.btn_giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_giris.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_giris.Location = new System.Drawing.Point(605, 332);
             this.btn_giris.Name = "btn_giris";
             this.btn_giris.Size = new System.Drawing.Size(238, 55);
@@ -90,10 +92,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.Location = new System.Drawing.Point(567, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(254, 32);
+            this.label3.Size = new System.Drawing.Size(276, 36);
             this.label3.TabIndex = 5;
             this.label3.Text = "ARAÇ KİRALAMA";
             // 
@@ -103,7 +105,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1416, 606);
+            this.ClientSize = new System.Drawing.Size(1536, 681);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_giris);
             this.Controls.Add(this.label2);
@@ -111,7 +113,7 @@
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_kullanici_adi);
             this.Name = "Form_Login";
-            this.Text = "Form_Login";
+            this.Text = "ARAÇ KİRALAMA GİRİŞ EKRANI ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

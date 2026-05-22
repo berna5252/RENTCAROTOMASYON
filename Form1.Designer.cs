@@ -228,9 +228,9 @@
             this.groupBox2.Controls.Add(this.btn_form_cc);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(1225, 251);
+            this.groupBox2.Location = new System.Drawing.Point(1206, 287);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(364, 280);
+            this.groupBox2.Size = new System.Drawing.Size(383, 290);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "FORMLARA GEÇİŞ";
@@ -263,7 +263,7 @@
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MÜŞTERİ İŞLEMLERİ";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

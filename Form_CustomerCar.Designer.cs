@@ -55,11 +55,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(-181, -2);
+            this.dataGridView1.Location = new System.Drawing.Point(-4, -3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1810, 163);
+            this.dataGridView1.Size = new System.Drawing.Size(1606, 163);
             this.dataGridView1.TabIndex = 0;
             // 
             // btn_listele
@@ -195,9 +195,9 @@
             this.groupBox1.Controls.Add(this.rd_1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(951, 290);
+            this.groupBox1.Location = new System.Drawing.Point(703, 302);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(661, 447);
+            this.groupBox1.Size = new System.Drawing.Size(899, 447);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "RAPORLAR";
@@ -208,7 +208,7 @@
             this.lbl_1.BackColor = System.Drawing.Color.White;
             this.lbl_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_1.Location = new System.Drawing.Point(386, 44);
+            this.lbl_1.Location = new System.Drawing.Point(365, 44);
             this.lbl_1.Name = "lbl_1";
             this.lbl_1.Size = new System.Drawing.Size(16, 22);
             this.lbl_1.TabIndex = 14;
@@ -219,11 +219,12 @@
             this.lbl_2.AutoSize = true;
             this.lbl_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lbl_2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_2.Location = new System.Drawing.Point(386, 155);
+            this.lbl_2.Location = new System.Drawing.Point(365, 155);
             this.lbl_2.Name = "lbl_2";
             this.lbl_2.Size = new System.Drawing.Size(16, 22);
             this.lbl_2.TabIndex = 15;
             this.lbl_2.Text = "-";
+            this.lbl_2.Click += new System.EventHandler(this.lbl_2_Click);
             // 
             // rd_2
             // 

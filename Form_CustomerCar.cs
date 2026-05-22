@@ -47,6 +47,16 @@ namespace RENTCAROTOMASYON
      .ToList();
 
                 dataGridView1.DataSource = list;
+                dataGridView1.Columns["MÜŞTERİADI"].HeaderText = "MÜŞTERİ ADI";
+                dataGridView1.Columns["MÜŞTERİSOYADI"].HeaderText = "MÜŞTERİ SOYADI";
+                dataGridView1.Columns["ARAÇADI"].HeaderText = "ARAÇ ADI";
+                dataGridView1.Columns["KATEGORİ"].HeaderText = "KATEGORİ";
+                dataGridView1.Columns["PLAKA"].HeaderText = "PLAKA";
+                dataGridView1.Columns["GÜNLÜKÜCRET"].HeaderText = "GÜNLÜK ÜCRET";
+                dataGridView1.Columns["ALIŞTARİHİ"].HeaderText = "ALIŞ TARİHİ";
+                dataGridView1.Columns["TESLİMTARİHİ"].HeaderText = "TESLİM TARİHİ";
+                dataGridView1.Columns["TOPLAMÜCRET"].HeaderText = "TOPLAM ÜCRET";
+                dataGridView1.Columns["DURUM"].HeaderText = "DURUM";
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.Columns["rental_ıd"].Visible = false;
 
@@ -284,7 +294,8 @@ namespace RENTCAROTOMASYON
 
                     if (result != null)
                     {
-                        lbl_2.Text = $"{result.Arac} {result.KiralamaSayisi} kez kiralandı";
+                        lbl_2.Text = $"{result.Arac} {result.KiralamaSayisi}" +
+                          $" kez kiralandı";
                     }
                     else
                     {
@@ -306,6 +317,10 @@ namespace RENTCAROTOMASYON
             this.Close();
         }
 
+        private void lbl_2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
     

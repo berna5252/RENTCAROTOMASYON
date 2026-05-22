@@ -221,7 +221,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form_Car";
-            this.Text = "Form_Car";
+            this.Text = "ARAÇ İŞLEMLERİ";
             this.Load += new System.EventHandler(this.Form_Car_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
