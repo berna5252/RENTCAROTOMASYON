@@ -8,7 +8,7 @@ using System.Data.Entity;
 
 namespace RENTCAROTOMASYON
 {
-    internal class CustomerDbContext: DbContext
+    public class CustomerDbContext : DbContext
 
     {
         public CustomerDbContext() : base("name=CustomerDbContext")
@@ -24,3 +24,4 @@ namespace RENTCAROTOMASYON
         public DbSet<CustomerCar> CustomerCars { get; set; }
     }
 }
+

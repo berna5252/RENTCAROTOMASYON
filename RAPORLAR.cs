@@ -74,6 +74,17 @@ namespace RENTCAROTOMASYON
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 anaForm = new Form1();
+            this.Hide();
+            anaForm.ShowDialog();
+            this.Close();
+        }
     }
     }
+
+
+
 

@@ -79,11 +79,17 @@ namespace RENTCAROTOMASYON
                     return;
                 }
 
+                if (!decimal.TryParse(txt_daily_price.Text, out decimal gunlukUcret))
+                {
+                    MessageBox.Show("Günlük ücret alanına sadece sayı giriniz.");
+                    return;
+                }
+
                 Car newCar = new Car()
                 {
                     car_name = txt_car_name.Text.Trim(),
                     car_plate = txt_car_plate.Text.Trim(),
-                    car_dailyprice = Convert.ToDecimal(txt_daily_price.Text),
+                    car_dailyprice = gunlukUcret,
                     category_ıd = Convert.ToInt32(cmb_category.SelectedValue)
                 };
 
@@ -195,7 +201,13 @@ namespace RENTCAROTOMASYON
                 {
                     car.car_name = txt_car_name.Text.Trim();
                     car.car_plate = txt_car_plate.Text.Trim();
-                    car.car_dailyprice = Convert.ToDecimal(txt_daily_price.Text);
+                    if (!decimal.TryParse(txt_daily_price.Text, out decimal gunlukUcret))
+                    {
+                        MessageBox.Show("Günlük ücret alanına sadece sayı giriniz.");
+                        return;
+                    }
+
+                    car.car_dailyprice = gunlukUcret;
                     car.category_ıd = Convert.ToInt32(cmb_category.SelectedValue);
 
                     db.SaveChanges();
@@ -244,4 +256,8 @@ namespace RENTCAROTOMASYON
     }
     
     
+
+
+
+
 

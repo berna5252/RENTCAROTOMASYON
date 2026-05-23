@@ -96,10 +96,10 @@ namespace RENTCAROTOMASYON
 
             if (e.RowIndex >= 0)
             {
-                txt_isim.Text = dataGridView1.Rows[e.RowIndex].Cells["customer_name"].Value.ToString();
-                txt_soyisim.Text = dataGridView1.Rows[e.RowIndex].Cells["customer_surname"].Value.ToString();
-                txt_email.Text = dataGridView1.Rows[e.RowIndex].Cells["customer_email"].Value.ToString();
-                txt_telefon.Text = dataGridView1.Rows[e.RowIndex].Cells["customer_telephone"].Value.ToString();
+                txt_isim.Text = dataGridView1.Rows[e.RowIndex].Cells["İSİM"].Value.ToString();
+                txt_soyisim.Text = dataGridView1.Rows[e.RowIndex].Cells["SOYİSİM"].Value.ToString();
+                txt_email.Text = dataGridView1.Rows[e.RowIndex].Cells["EPOSTA"].Value.ToString();
+                txt_telefon.Text = dataGridView1.Rows[e.RowIndex].Cells["TELEFON"].Value.ToString();
             }
 
         }
@@ -210,3 +210,6 @@ namespace RENTCAROTOMASYON
 
 
   
+
+
+
